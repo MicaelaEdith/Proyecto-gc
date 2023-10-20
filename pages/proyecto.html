@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto GC</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/proyecto.css">
+</head>
+<body><nav class="navbar navbar-expand-md">
+    <div class="container-fluid">
+      <a href="../index.html">
+      <img class="imgLogo"src="../assets/logoGC.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="btn" href="../pages/proyecto.html">Proyecto</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn" href="../pages/actividades.html">Actividades</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn" href="../pages/colaborar.html">Colaborar</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn" href="../pages/inscripciones.html">Inscripciones</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section>
+    <div class="imgPpal">
+      <img src="../assets/proyecto/proyecto-header-md.jpg" alt="">
+      <p class="slogan">"El cerebro no es un vaso por llenar, sino una lámpara por encender."</p>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-10">
+    <div class="cardProyecto">
+    <img class="imgProyecto" src="../assets/proyecto/levantando-manos.jpg" alt="">
+    <div class="proyecto">
+    <h2>Proyecto GC</h2>
+      <p>Los niños asisten a contra turno escolar en nuestro predio de González Catán cada semana. El proyecto GC realiza un programa educativo con actividades simultáneas como educación física, apoyo escolar, recreación con talleres de arte, música e idiomas.
+
+      Los niños también participan de una merienda saludable. Las actividades están diseñadas para estimular, enseñar y entrenar las capacidades cognitivas, las relaciones de compañerismo con otros y el desarrollo físico. </p>
+    </div>
+  </div>
+  <div class="cardProyecto">
+    <div class="proyecto" style="align-items: center; width: 95%;">
+      <h2>Nuestros objetivos</h2>
+        <p>Para lograr nuestro objetivo de proveer oportunidades para el desarrollo integral de los niños y adolescentes, Los proyectos de GC se basan en tres ejes:
+          </p>
+          <div style="display: flex;">
+            <div class="imgCard">
+              <img class="imgEje" src="../assets/home/wireframe-07.svg" alt="">
+              <span>crecimiento</span>
+            </div>
+            <div class="imgCard">
+              <img class="imgEje" src="../assets/home/wireframe-06.svg" alt="">
+              <span>conocimiento</span>
+            </div>
+            <div class="imgCard">
+              <img class="imgEje" src="../assets/home/wireframe-08.svg" alt="">
+              <span>compañerismo</span>
+            </div>
+          </div>
+        <p>
+        A través de nuestro programa educativo desarrollamos actividades que proveen oportunidades para lograr que los niños tengan buen crecimiento físico a través del deporte y la alimentación balanceada; para ayudar el desarrollo del conocimiento tienen apoyo pedagógico con enfoque en lenguas y matemáticas; y en lo relacional  con talleres de arte, música e idiomas. </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-1"></div>
+  </section>
+  <footer class="md container-fluid ">
+    <div class="row">
+      <div class="contacto col-11 col-md-5 mt-4" >
+        <h2 style="background-color:#71bf44 ;">Escribinos:</h2>
+        <span>Manz xxx, González Catán</span>
+        <span>Buenos Aires Provincia</span>
+        <span>Tel: 11 5555 XXXX</span>
+        <span>Email: info@info.com</span>
+        <div style="display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 1vh;">
+          <img src="../assets/logoGC_slogan.webp" alt="">
+          <a href="https://www.instagram.com/proyecto.gc/" target="_blank">
+            <img src="../assets/instagram.svg" style="width: 25px;" alt="">
+          </a>
+        </div>
+      </div>
+      <form action="" id="formularioFooter" method="post" class="col col-10 col-md-5 mt-4">
+        <label for="" id="verifiqueDatos" class="lblValidar"></label>
+        <input class="form-control" required type="text" name="" id="formNombre" placeholder="Nombre*">
+        <input class="form-control" required type="email" placeholder="Email*" id="formMail">
+        <textarea class="form-control" required rows="4" placeholder="Mensaje*" id="formMensaje"></textarea>
+        <button type="submit" onclick="return enviarFormulario();" class="btn btnEnviar" style="color:white; background-color: #0f75bc;" name="btnEnviarForm"></input>Enviar </button>
+      </form>
+    </div>
+  </footer>
+  <script src="../js/validaciones.js"></script>
+</body>
+</html>

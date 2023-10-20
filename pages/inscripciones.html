@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto GC</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/inscripciones.css">
+</head>
+<body><nav class="navbar navbar-expand-md">
+    <div class="container-fluid">
+      <a href="../index.html">
+      <img class="imgLogo"src="../assets/logoGC.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="btn" href="../pages/proyecto.html">Proyecto</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn" href="../pages/actividades.html">Actividades</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn" href="../pages/colaborar.html">Colaborar</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn" href="../pages/inscripciones.html">Inscripciones</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section>
+    <h1>INSCRIPCIONES</h1>
+    <h2>Requisitos:</h2>
+    <ul>
+      <li>
+        Tener entre 5  y hasta 11 años
+      </li>
+      <li>
+        Tener acompañamiento de la familia durante el ciclo lectivo
+      </li>
+    </ul>
+    <span class="spanInscrip">PARA COMENZAR CON EL PROCESO DE INSCRIPCIÓN DEBEN COMPLETAR EL SIGUIENTE FORMULARIO:</span>
+<div class="md container-fluid mt-1">
+<div class="row">
+  <div class="col-1"></div>
+<div class="col-lg-5 col-md-10" style="display: flex; align-items: center;">
+  <img class="imgInscripciones" src="../assets/inscripciones/recreacion-0-md.jpg" alt="">
+</div>
+  <form class="col-lg-5 col-md-10 formulario mt-3 mb-3"method="post">
+    <label for="" id="verifiqueDatosIns" class="lblValidarInscripcion"></label>
+    <div class="mb-3">
+      <input type="text" required class="form-control" id="nombreInscripcion" placeholder="Nombre del alumno/a *">
+    </div>
+    <div class="mb-3">
+      <input type="email" required class="form-control" id="emailInscripcion" placeholder="Email *">
+    </div>
+    <div class="mb-3">
+      <input type="number" required class="form-control" id="numeroInscripcion" placeholder="Número de teléfono *">
+    </div>
+    <div class="mb-3">
+      <input type="text" class="form-control" id="turnoInscripcion" placeholder="Turno (mañana o tarde) *">
+    </div>
+    <div class="mb-1">
+      <textarea name="" required class="form-control" id="mensajeInscripcion" cols="30" rows="5" placeholder="Mensaje *"></textarea>
+    </div>
+    <button type="submit" onclick="return enviarInscripcion();" class="btn btnEnviar">Enviar</button>
+  </form>
+  <div class="col-1"></div>
+</div>
+</div>
+  </section>
+  <footer class="md container-fluid">
+    <div class="row">
+      <div class="contacto col-11 col-md-5 mt-4" >
+        <h2 style="color:beige; background-color:#71bf44 ;">Escribinos:</h2>
+        <span>Manz xxx, González Catán</span>
+        <span>Buenos Aires Provincia</span>
+        <span>Tel: 11 5555 XXXX</span>
+        <span>Email: info@info.com</span>
+        <div style="display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 1vh;">
+          <img src="../assets/logoGC_slogan.webp" alt="">
+          <a href="https://www.instagram.com/proyecto.gc/" target="_blank">
+            <img src="../assets/instagram.svg" style="width: 25px;" alt="">
+          </a>
+        </div>
+      </div>
+      <form action="" id="formularioFooter" method="post" class="col col-10 col-md-5 mt-4">
+        <label for="" id="verifiqueDatos" class="lblValidar"></label>
+        <input class="form-control" required type="text" name="" id="formNombre" placeholder="Nombre*">
+        <input class="form-control" required type="email" placeholder="Email*" id="formMail">
+        <textarea class="form-control" required rows="4" placeholder="Mensaje*" id="formMensaje"></textarea>
+        <button type="submit" onclick="return enviarFormulario();" class="btn btnEnviar" style="color:white; background-color: #0f75bc;" name="btnEnviarForm"></input>Enviar </button>
+      </form>
+    </div>
+  </footer>
+  <script src="../js/validaciones.js"></script>
+</body>
+</html>

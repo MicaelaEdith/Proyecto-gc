@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&family=Roboto&family=Roboto+Mono:wght@400;700&display=swap');
+/*
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+
+*/
+:root{
+    font-family: 'Roboto', sans-serif;
+    --verde:#71bf44;
+    --azul:#0f75bc;
+    --grey:#DCDDDE;
+    --footer:#7d7d7e;
+}
+.navbar{
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    border-bottom: 1px solid var(--grey);
+    z-index: 1000;
+}
+.imgLogo{
+    width: 55px;
+    margin-right: 1vw;
+    margin-bottom: 1vh;
+}
+.imgLogo:hover{
+    transform: scale(1.02);
+}
+.btn{
+    font-size: medium;
+    color:var(--verde);
+    margin:1px;
+}
+.btn:hover{
+    background-color: var(--azul);
+    color: var(--grey)
+}
+.navbar-toggler{
+    order: -1;
+    margin-left: 15px;
+}
+.imgHome{
+    width: 100%;
+    height: 600px;
+    background-image: url(../assets/home/home-lg.jpg);
+    background-size: cover;
+    position:relative;
+    z-index: 999;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.homeImgsEjes{
+    display: flex;
+}
+.homeImgsEjes img{
+    width: 75%;
+}
+.homeP{
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: 600;
+    color: var(--azul);
+    text-align: center;
+    width: 60%;
+    margin-top: 2vh;
+    animation: fadeIn 1.5s ease forwards;
+}
+.homeEjes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3vh;
+    text-transform: uppercase;
+    color: var(--azul);
+    font-weight: 600;
+}
+.h3Proyecto{
+    color:var(--verde);
+    margin-bottom: 8px;
+}
+footer{
+    color:beige;
+    background-color: var(--footer);
+    margin-top: 5px;
+    padding-bottom: 12px;
+}
+footer span{
+    background-color: var(--azul);
+    padding:4px;
+    width: 60%;
+}
+.contacto{
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+form{
+    align-items: start;
+    margin-left: 5%;
+}
+form input, textarea{
+    margin: 3px;
+}
+
+.slogan{
+    display: flex;
+    position: absolute;
+    font-size: larger;
+    background-color: var(--verde);
+    font-weight: 400;
+    text-align: center;
+    color:white;
+    margin-right: 4vw;  
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    right: 90px;
+    bottom:50px;
+    border-radius: 5px;
+    animation: fadeIn 1.5s ease forwards;
+}
+.btnEnviar  {
+    background-color: var(--azul);
+    color: var(--grey);
+}
+.btn:hover{
+    transform: scale(1.01);
+    color:white;
+}
+.lblValidar{
+    background-color: red;
+    color:white;
+    margin-left: 4px;
+    border-radius: 5px;
+}
+.lblValidarInscripcion{
+    background-color: red;
+    color:white;
+    margin-left: 4px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:768px){
+    .homeImgsEjes{
+        display: flex;
+        flex-direction: column;
+    }
+    iframe{
+        width: 80%;
+    }
+    .navbar{
+        padding:2px;
+    }
+    .imgLogo{
+        width: 40px;
+    }
+    .imgLogo:hover{
+        transform: scale(1.04);
+    }
+    .imgHome{
+        background-image: url(../assets/home/home-md.jpg);
+        height: 450px;
+    } 
+    .homeP{
+        margin-top: 2vh;
+    } 
+    .contacto{
+        font-size: small;
+        align-items: center;
+        text-align: center;
+    }
+    .slogan{
+        right: 5px;
+        bottom:20px;
+    }
+}
+@media screen and (max-width:576px){
+    main{
+        padding-top: 5vh;
+    }
+    .imgHome{
+        width: 100%;
+        height: 250px;
+        background-image: url(../assets/home/home-sm.jpg);
+        background-size:contain cover;
+        background-repeat: no-repeat;
+    }
+    .contacto{
+        font-size: smaller;
+        text-align: center;
+    }
+    .slogan{
+        right: 10px;
+        bottom:20px;
+        font-size: small;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@keyframes fadeIn {
+    from {
+        transform: scale(0.6);
+    }
+    to {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,60 @@
+:root{
+    font-family: 'Roboto', sans-serif;
+    --verde:#71bf44;
+    --azul:#0f75bc;
+    --grey:#DCDDDE;
+    --footer:#7d7d7e;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 85px;
+    margin-bottom: 2em;
+}
+section li{
+    color:var(--footer);
+}
+section span{
+    color:var(--footer);
+    margin-bottom: 2em;
+}
+ul {
+    list-style: none;
+}
+h1{
+    color:var(--verde);
+    background-color: var(--azul);
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+h2{
+    color:var(--verde);
+    text-align: start;
+    align-items: start;
+}
+.imgInscripciones{
+    width: 100%;
+    border-radius: 5px;
+}
+.btnEnviar  {
+    background-color: var(--azul);
+    color: var(--grey);
+}
+.btn:hover{
+    transform: scale(1.01);
+    color:white;
+}
+.formulario{
+    margin-left: 3px;
+}
+@media screen and (max-width:768px){
+    section{
+        padding-top: 60px;
+    }
+    .spanInscrip{
+        margin-left: 3vw;
+    }
+}
